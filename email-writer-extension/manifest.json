@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Email Writer Assistant",
+  "version": "1.0.0",
+  "description": "An AI-Powered email reply generator.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],"host_permissions": [
+    "*://mail.google.com/*","http://localhost:8080/*"
+  ],"web_accessible_resources": [
+    {
+      "resources": [
+        "icons/*"
+      ],
+      "matches": [
+        "*://mail.google.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "Email Writer Assistant",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content-script.js"
+      ],
+      "matches": [
+        "*://mail.google.com/*"
+      ],"run_at": "document_end"
+    }
+  ]
+}

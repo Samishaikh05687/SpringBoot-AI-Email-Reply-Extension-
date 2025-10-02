@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Writer Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header>
+      
+      <h1>Email Writer Assistant</h1>
+    </header>
+
+    <div class="section">
+      <label for="emailContent">Email Content:</label>
+      <textarea id="emailContent" placeholder="Select email in Gmail or paste content here"></textarea>
+      <button id="fetchGmailBtn">📥 Fetch from Gmail</button>
+    </div>
+
+    <div class="section">
+      <label for="toneSelector">Tone:</label>
+      <select id="toneSelector">
+        <option value="professional">Professional</option>
+        <option value="polite">Polite</option>
+        <option value="friendly">Friendly</option>
+        <option value="concise">Concise</option>
+      </select>
+    </div>
+
+    <button id="generateBtn">✍️ Generate Reply</button>
+
+    <div id="replyBox" class="reply-box"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
