@@ -55,3 +55,10 @@ This project consists of three main components:
     ./mvnw clean install
     ./mvnw spring-boot:run
     ```    
+
+## 🔹Frontend (Chrome Extension)
+
+    1. Open Chrome and go to chrome://extensions/.
+    2.Enable Developer mode (top right corner).
+    3.Click Load unpacked and select the frontend folder of this project.
+    4.Ensure the backend (localhost:8080) is running for API requests.
